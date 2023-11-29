@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets 🐶</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="skip"><a href="#pet-content">Skip to Main Content</a></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">PETS</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="travel.html">Travel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Hello! This is a site shows all kinds of pets. Which cuttie do you want to see today?</p>
+            <button onclick="location.href='#bacon'; closeModal()">Bacon Q Dog</button>
+            <button onclick="location.href='#peddie'; closeModal()">Peddie</button>
+            <button onclick="location.href='#smoothie'; closeModal()">Smoothie</button>
+            <button onclick="location.href='#lulu'; closeModal()">Lulu</button>
+            <button onclick="location.href='#fitz'; closeModal()">Fitz</button>
+        </div>
+    </div>
+    <main id="pet-content">
+        <section id="bacon">
+            <!--<h1>Shaoying Zheng</h1>-->
+            <h2>Bacon Q Dog</h2>
+            <div class="pet left">
+
+                <img src="images/bacon.jpg" alt="Brown labradoodle wearing colorful lei">
+                <div class="text_intro">
+                    <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three
+                        different beds/couches that his family has gifted him. He enjoys a walk or two around the
+                        neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid
+                        the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p>
+                    <br>
+                    <p>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of
+                        his energy. He will place his toys on a mini couch and frantically drag the couch around, giving
+                        his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</p>
+                </div>
+            </div>
+            <div class="likes">
+                <h3>Likes</h3>
+                <ul class="likes_list">
+                    <li>Belly rubs</li>
+                    <li>Playing tug-of-war</li>
+                    <li>Sneaking onto the couch</li>
+                </ul>
+            </div>
+            <h3>Photo Gallery</h3>
+            <div class="slide-container">
+                <button class="prev" data-target="slideshow1"><i class="fas fa-arrow-left"></i></button>
+                <div id="slideshow1" class="grid-container slideshow">
+                    <div class="slide active">
+                        <img src="images/bacon_bandana.JPG" alt="Brown labradoodle wearing an orange bandana">
+                    </div>
+                    <div class="slide">
+                        <img src="images/bacon_graduation.JPG"
+                            alt="Small labradoodle puppy wearing a graduation cap and gown">
+                    </div>
+                    <div class="slide">
+                        <video controls>
+                            <source src="images/bacon_agility.mov">
+                            Your browser does not support the video tag. This was a video of a girl and dog
+                            demonstrating a
+                            sit
+                            and stay procedure
+                        </video>
+                    </div>
+                    <div class="slide">
+                        <img src="images/bacon_halloween.JPG" alt="Brown labradoodle wearing a pirate costume">
+                    </div>
+                </div>
+                <button class="next" data-target="slideshow1"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="peddie">
+            <h2>Peddie</h2>
+            <div class="pet right">
+                <img src="images/peddie.jpg" width="400" alt="A cute naughty golden retriver.">
+                <div class="text_intro">
+                    <p>Peddie, the Golden Retriever, is a charming and lively companion known for his beautiful coat and
+                        playful
+                        nature. He's a perfect partner for outdoor fun, loved for his loyalty and gentle disposition.
+                    </p>
+                    <br>
+                    <p>Peddie's intelligence and friendly demeanor make him a beloved member of his family and a source
+                        of
+                        joy
+                        for everyone who knows him.</p>
+                </div>
+            </div>
+            <div class="likes">
+                <h3>Likes</h3>
+                <ul class="likes_list">
+                    <li>swimming</li>
+                    <li>Running in the park</li>
+                    <li>Meeting new friends</li>
+                </ul>
+            </div>
+            <h3>Photo Gallery</h3>
+            <div class="slide-container">
+                <button class="prev" data-target="slideshow2"><i class="fas fa-arrow-left"></i></button>
+                <div id="slideshow2" class="grid-container slideshow">
+                    <div class="slide active">
+                        <img src="images/peddie_play.jpg" alt="Peddie is playing in the snow.">
+                    </div>
+                    <div class="slide">
+                        <img src="images/peddie_sleep.jpg" alt="Peddie is sleeping on the couch.">
+                    </div>
+                    <div class="slide">
+                        <img src="images/peddie_swim.jpg" alt="Peddie is swimming in the lake.">
+                    </div>
+                    <div class="slide">
+                        <img src="images/peddie_smile.jpg" alt="Peddie is the sweetest in the world.">
+                    </div>
+                </div>
+                <button class="next" data-target="slideshow2"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="smoothie">
+            <h2>Smoothie</h2>
+            <div class="pet left">
+                <img src="images/Copy_of_Smoothie_staring.jpg" width="400" alt="Long-hair beautiful, orange tabby cat">
+                <div class="text_intro">
+                    <p>Smoothie has been dubbed the "world's most photogenic cat", and her emerald eyes and golden fur
+                        have even inspired a mural in New Zealand. Smoothie also has an aptly-named brother named
+                        Milkshake, and
+                        the two are often featured together across social media platforms.</p>
+                    <br>
+                    <p>She became an internet sensation with 2.3 million followers on her smoothiethecat Instagram
+                        account.</p>
+                </div>
+            </div>
+            <div class="likes">
+                <h3>Likes</h3>
+                <ul class="likes_list">
+                    <li>Playing</li>
+                    <li>Sunshine</li>
+                </ul>
+            </div>
+            <h3>Photo Gallery</h3>
+            <div class="slide-container">
+                <button class="prev" data-target="slideshow3"><i class="fas fa-arrow-left"></i></button>
+                <div id="slideshow3" class="grid-container slideshow">
+                    <div class="slide active">
+                        <img src="images/Copy_of_Smoothie_yawn.jpg" width="200" alt="Smoothies is yawning.">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Copy_of_Smoothie_lying.jpg" width="200" alt="Smoothies is lying.">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Copy_of_Smoothie_curious.jpg" width="200"
+                            alt="Smoothies is curious about the world.">
+                    </div>
+                </div>
+                <button class="next" data-target="slideshow3"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="lulu">
+            <h2>Lulu</h2>
+            <div class="pet right">
+                <img src="images/lulu-1.jpg" width="400"
+                    alt="A chubby guinea pig with patches of dark-brown and white.">
+                <div class="text_intro">
+                    <p>Lulu is a lively guinea pig who enjoys eating carrots and peppers. When not given any carrots or
+                        peppers she will squeak.</p>
+                    <br>
+                    <p>Lulu is very adventurous, she will explore her surroundings looking for food and is not afraid.
+                    </p>
+                </div>
+            </div>
+            <div class="likes">
+                <h3>Likes</h3>
+                <ul class="likes_list">
+                    <li>peppers</li>
+                    <li>carrots</li>
+                    <li>sleeping</li>
+                </ul>
+            </div>
+            <h3>Photo Gallery</h3>
+            <div class="slide-container">
+                <button class="prev" data-target="slideshow4"><i class="fas fa-arrow-left"></i></button>
+                <div id="slideshow4" class="grid-container slideshow">
+                    <div class="slide active">
+                        <img src="images/lulu-eating-1.JPG" width="200" alt="Lulu enjoying a pepper">
+                    </div>
+                    <div class="slide">
+                        <img src="images/lulu-sleeping-1.jpg" width="200" alt="Lulu sleeping in a green house.">
+                    </div>
+                    <div class="slide">
+                        <img src="images/lulu-sleeping-2.jpg" width="200" alt="Lulu sleeping in a gray house.">
+                    </div>
+                    <div class="slide">
+                        <img src="images/lulu-2.jpg" width="200" alt="Lulu sniffing the camera.">
+                    </div>
+                </div>
+                <button class="next" data-target="slideshow4"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="fitz">
+            <h2>Fitz</h2>
+            <div class="pet left">
+                <img src="images/Fitz.jpeg" width="400" alt="Boston terrier watching a tennis ball at the table.">
+                <div class="text_intro">
+                    <p>Loves chasings tennis balls, chipmunks, squirrels, and birds. Often found sitting by the fire in
+                        wintertime, and in sun patches when available. He’s energetic, mischievous, and easily bored. He
+                        loves
+                        people and gets grumpy if left without a lap too long. </p>
+                    <br>
+                    <p>Loves barking up trees, running around on the lawn, and digging in the dirt looking for moles. He
+                        especially likes getting treats and whines when he comes inside and doesn’t get a snack. </p>
+                </div>
+            </div>
+            <div class="likes">
+                <h3>Likes</h3>
+                <ul class="likes_list">
+                    <li>blankets</li>
+                    <li>being warm</li>
+                    <li>barking</li>
+                </ul>
+            </div>
+            <h3>Photo Gallery</h3>
+            <div class="slide-container">
+                <button class="prev" data-target="slideshow5"><i class="fas fa-arrow-left"></i></button>
+                <div id="slideshow5" class="grid-container slideshow">
+                    <div class="slide active">
+                        <img src="images/Fitz_standing_on_chair.jpeg" width="200"
+                            alt="Fitz standing on a wooden chair, looking at the camera.">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Fitz_sleeping.jpeg" width="200" alt="Fitz sleeping in a fuzzy dog bed. ">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Fitz_on_the_lawn.jpeg" width="200"
+                            alt="Fitz laying out on the lawn in the grass.">
+                    </div>
+                    <div class="slide">
+                        <img src="images/Fitz_laying_in_bed.jpeg" width="200"
+                            alt="Fitz sleeping with his face buried in a plaid blanket, only his head is visible. ">
+                    </div>
+                </div>
+                <button class="next" data-target="slideshow5"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SI539--Final Project--Shaoyinz</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/interaction.js"></script>
+
+</body>
+
+</html>
