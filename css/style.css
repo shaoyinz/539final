@@ -20,7 +20,7 @@ h2 {
 h3 {
     text-align: center;
     font-size: 24px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cursive, Verdana, sans-serif;
     color: #283618;
     margin: 10px 10px;
 }
@@ -29,7 +29,8 @@ p,
 li {
     line-height: 150%;
     margin: 0 10px 0 10px;
-    font-family: Helvetica, Arial, Nimbus Sans L, sans-serif;
+    /* font-family: Helvetica, Arial, Nimbus Sans L, sans-serif; */
+    font-family: Quicksand, Helvetica, Arial, Nimbus Sans L, sans-serif;
 }
 
 span {
@@ -64,7 +65,7 @@ ol {
     margin: 20px;
     background-color: darkseagreen;
     border: solid 5px sandybrown;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-radius: 98% 2% 98% 2% / 2% 98% 2% 98%;
 }
 
 .pet img{
@@ -175,8 +176,12 @@ nav a.active {
         display: none;
     }
 
-    .likes_list {
-        animation: none;
+    .likes_list{
+        list-style: none;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
     }
 }
 
@@ -313,18 +318,25 @@ footer p {
         overflow: hidden;
     }
 
-    .likes_list {
+    /* .likes_list {
         list-style: none;
         position: absolute;
         right: 0%;
         padding-left: 0;
         animation: listing 10s linear infinite;
+    } */
+    .likes_list {
+        list-style: none;
+        position: relative;
+        overflow: hidden; 
+        white-space: nowrap; 
+        width: 100%; 
     }
 
-    .likes_list:hover,
+    /* .likes_list:hover,
     .likes_list:focus {
         animation-play-state: paused;
-    }
+    } */
 
     .likes_list li {
         font-size: 30px;
@@ -336,7 +348,7 @@ footer p {
         flex-direction: row-reverse;
     }
 
-    @keyframes listing {
+    /* @keyframes listing {
         0% {
             transform: translateX(120%)
         }
@@ -344,5 +356,5 @@ footer p {
         100% {
             transform: translateX(-100%)
         }
-    }
+    } */
 }
